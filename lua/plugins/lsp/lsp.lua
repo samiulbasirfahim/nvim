@@ -10,7 +10,7 @@ return {
     M.on_attach = function()
       -- vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
       if vim.fn.has("nvim-0.10") == 1 then
-        vim.lsp.inlay_hint.enable(0, true)
+        vim.lsp.inlay_hint.enable()
       end
     end
 
