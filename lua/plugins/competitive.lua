@@ -16,27 +16,17 @@ return {
 			"nvim-telescope/telescope.nvim",
 			"nvim-lua/plenary.nvim", -- required by telescope
 			"MunifTanjim/nui.nvim",
+
 			-- optional
 			"nvim-treesitter/nvim-treesitter",
 			"nvim-tree/nvim-web-devicons",
 		},
 		opts = {
+			lang = "cpp",
 			storage = {
-				home = "$HOME/dev/leetcode",
+				home = "~/dev/leetcode",
 				cache = vim.fn.stdpath("cache") .. "/leetcode",
 			},
-			lang = "cpp",
-			arg = "leetcode.nvim",
-			cn = { -- leetcode.cn
-				enabled = false,
-				translator = true,
-				translate_problems = true,
-			},
-			description = {
-				-- show_stats = false,
-			},
-			key = {},
-			image_support = false,
 		},
 	},
 }
