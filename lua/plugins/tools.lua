@@ -8,22 +8,15 @@ return {
 				mode = "term",
 				startinsert = true,
 				filetype = {
-					java = "cd $dir && javac $fileName && java $fileNameWithoutExt",
 					python = "python3 -u",
 					typescript = "deno run",
-					rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt",
-					c = "cd $dir && mkdir -p bin && cd bin && gcc ../$fileName -o $fileName.exe && ./$fileName.exe",
+					rust = "cd $dir && cargo run",
+					c = "cd $dir && mkdir -p .bin && cd .bin && gcc ../$fileName -o $fileName.exe && ./$fileName.exe",
 					cpp = "cd $dir && mkdir -p .bin && cd .bin && g++ ../$fileName -o $fileName.exe && ./$fileName.exe",
 				},
 				project = {},
 			})
 		end,
-	},
-	{
-		"vyfor/cord.nvim",
-		build = "./build",
-		event = "VeryLazy",
-		opts = {},
 	},
 	{
 		"nanotee/zoxide.vim",
