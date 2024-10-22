@@ -24,7 +24,7 @@ return {
 		opts = {
 			lang = "cpp",
 			storage = {
-				home = "~/dev/leetcode",
+				home = "~/dev/problemSolving/leetcode",
 				cache = vim.fn.stdpath("cache") .. "/leetcode",
 			},
 		},

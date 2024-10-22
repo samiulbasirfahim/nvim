@@ -111,7 +111,7 @@ return {
 				format = function(entry, vim_item)
 					local kind = lspkind.cmp_format({
 						mode = "symbol",
-						maxwidth = 40,
+						maxwidth = 30,
 						symbol_map = cmp_icons,
 					})(entry, vim_item)
 					local strings = vim.split(kind.kind, "%s", { trimempty = true })
