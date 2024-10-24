@@ -19,7 +19,6 @@ return {
 
             -- optional
             "nvim-treesitter/nvim-treesitter",
-            "nvim-tree/nvim-web-devicons",
         },
         opts = {
             lang = "cpp",

@@ -2,6 +2,10 @@ local utils = require("core.utils")
 local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 
+
+keymap("n", "<S-Tab>", "<Plug>(cokeline-focus-prev)", { silent = true })
+keymap("n", "<Tab>", "<Plug>(cokeline-focus-next)", { silent = true })
+
 local function map(mode, keys, action, desc)
   desc = desc or ""
   local opts = { noremap = true, silent = true, desc = desc }

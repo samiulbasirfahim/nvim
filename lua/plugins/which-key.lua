@@ -9,7 +9,6 @@ return {
 			vim.o.timeoutlen = 300
 
 			local wk = require("which-key")
-			-- border
 			wk.setup({
 				win = {
 					border = "single",
@@ -32,9 +31,6 @@ return {
 				b = {
 					name = "Buffers",
 					d = { ":bdelete<cr>", "Close Buffer" },
-					n = { ":bnext<cr>", "Next Buffer" },
-					p = { ":bprevious<cr>", "Last Buffer" },
-					c = { ":%bd|e#<cr>", "Close All Buffer" },
 				},
 
 				-- tabs
