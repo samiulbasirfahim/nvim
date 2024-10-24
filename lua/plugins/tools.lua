@@ -19,11 +19,25 @@ return {
 		end,
 	},
 	{
-		"nanotee/zoxide.vim",
-	},
-	{
 		"mg979/vim-visual-multi",
 		"norcalli/nvim-colorizer.lua",
 		"norcalli/nvim-colorizer.lua",
+	},
+	{
+		"goolord/alpha-nvim",
+		-- dependencies = { 'echasnovski/mini.icons' },
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		config = function()
+			local alpha = require("alpha")
+
+			-- Set header
+			local startify = require("alpha.themes.startify")
+
+			startify.section.header.val = {
+				"",
+			}
+			startify.file_icons.provider = "devicons"
+			alpha.setup(startify.config)
+		end,
 	},
 }

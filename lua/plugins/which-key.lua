@@ -34,16 +34,12 @@ return {
 					d = { ":bdelete<cr>", "Close Buffer" },
 					n = { ":bnext<cr>", "Next Buffer" },
 					p = { ":bprevious<cr>", "Last Buffer" },
+					c = { ":%bd|e#<cr>", "Close All Buffer" },
 				},
 
 				-- tabs
 				t = {
-					name = "Tabs",
-					n = { ":tabnext", "Next Tab" },
-					p = { ":tabprevious", "Previous Tab" },
-					x = { ":tabclose", "Close Tab" },
-					c = { ":tabnew", "Create Tab" },
-
+					name = "Toggle",
 					l = { toggle_lazygit, "LazyGit" },
 				},
 
