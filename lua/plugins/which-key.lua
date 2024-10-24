@@ -50,6 +50,12 @@ return {
 				-- NvimTree
 				e = {
 					name = "NvimTree",
+					p = {
+						function()
+							require("dropbar.api").pick(vim.v.count ~= 0 and vim.v.count)
+						end,
+						"Toggle dropbar menu",
+					},
 					e = { ":NvimTreeToggle<cr>", "Toggle" },
 					f = { ":NvimTreeFocus<cr>", "Focus" },
 					q = { ":NvimTreeClose<cr>", "Close" },
@@ -139,7 +145,7 @@ return {
 		"nvchad/showkeys",
 		cmd = "ShowkeysToggle",
 		opts = {
-      position = "top-center"
+			position = "top-center",
 		},
 	},
 }

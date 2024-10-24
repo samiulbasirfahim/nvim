@@ -7,12 +7,14 @@ return {
                 -- Formatter
                 null_ls.builtins.formatting.stylua,
                 null_ls.builtins.formatting.prettier,
+                null_ls.builtins.formatting.shfmt,
+
 
                 null_ls.builtins.formatting.clang_format.with({ extra_args = { "-style=", '"{IndentWidth: 4}"' } }),
 
                 -- Code actions
-
                 -- Diagnostic
+                null_ls.builtins.diagnostics.cppcheck,
             },
         })
     end,
